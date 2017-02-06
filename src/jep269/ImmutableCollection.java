@@ -8,7 +8,8 @@ public class ImmutableCollection {
 
     public static void main(String[] args) {
         Set<Integer> set = Set.of(1,2,3);
-        System.out.println("Order is not guaranteed");
+        System.out.println("Order is not guaranteed ... and change only per JVM");
+        set.stream().forEach(System.out::println);
         set.stream().forEach(System.out::println);
 
         try {
